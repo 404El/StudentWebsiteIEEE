@@ -16,9 +16,9 @@ const TheStrategyPage = () => {
       </p>
 
       <div className="flex flex-row items-center justify-around w-full mt-10 gap-10">
-        <MediumCard/>
-        <MediumCard/>
-        <MediumCard/>
+        <MediumCard title="Elite Networking" icon="../../src/assets/shieldIcon.png" b1="Connect with Fortune 500 industry leaders" b2="Access VSU alumni network in top tech companies" b3="Mentorship from IEEE professionals worldwide"/>
+        <MediumCard title="Technical Mastery" icon="../../src/assets/boltIcon.png" b1="Hands-on workshops in AI, robotics, and IoT" b2="Access to cutting-edge lab equipment and software" b3="Industry certifications and training programs"/>
+        <MediumCard title="Victory & Recognition" icon="../../src/assets/medalIcon.png" b1="Compete in national hackathons and design challenges" b2="Resume-building leadership positions" b3="IEEE scholarship and award opportunities"/>
 
       </div>
 

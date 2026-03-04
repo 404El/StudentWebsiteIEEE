@@ -4,6 +4,7 @@ import BranchMissionPage from "./pages/BranchMissionPage"
 import HomePage from "./pages/HomePage"
 import StatsPage from "./pages/StatsPage"
 import TheStrategyPage from "./pages/TheStrategyPage"
+import UpcomingBattles from "./pages/UpcomingBattles"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <StatsPage/>
         <TheStrategyPage/>
         <AdvantagePage/>
+        <UpcomingBattles/>
 
       </div>
       

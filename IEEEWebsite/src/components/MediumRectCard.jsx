@@ -2,7 +2,7 @@ import React from "react";
 
 const MediumRectCard = ({ title, description, icon}) => {
   return (
-    <div className="w-130 h-65 bg-Smoke-Orange border-2 rounded-2xl border-white flex flex-row shadow-lg">
+    <div className="w-130 h-65 bg-Smoke-Orange border-2 rounded-2xl border-white flex flex-row shadow-xl">
       <div className="w-full h-full flex flex-row gap-3 p-5">
         <div className="w-15 h-15 bg-IEEE-Blue rounded-2xl flex items-center justify-center">
           <img
