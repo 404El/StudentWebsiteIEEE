@@ -1,5 +1,6 @@
 import React from "react";
 import MediumCard from "../components/MediumCard";
+import MediumRectCard from "../components/MediumRectCard";
 
 const AdvantagePage = () => {
   return (
@@ -14,10 +15,11 @@ const AdvantagePage = () => {
         What Makes VSU IEEE the Premier Student Branch in Region 3
       </p>
 
-      <div className="flex flex-row items-center justify-around w-full mt-10 gap-10">
-        <MediumCard/>
-        <MediumCard/>
-        <MediumCard/>
+      <div className="grid grid-cols-2 gap-6 w-full mt-10">
+        <MediumRectCard title="HBCU LEADERSHIP" description="As a leading HBCU in IEEE Region 3, VSU brings unique perspectives and innovative approaches to technology education. We champion diversity in STEM and create pathways for underrepresented communities to excel in engineering." icon="../../src/assets/targetIcon.png"/>
+        <MediumRectCard title="COMMUNITY IMPACT" description="Our branch serves the Greater Petersburg community through K-12 STEM outreach programs, tech literacy workshops, and partnerships with local schools—creating a pipeline of future Trojan engineers." icon="../../src/assets/peopleIcon.png"/>  
+        <MediumRectCard title="INDUSTRY PARTNERSHIPS" description="Exclusive partnerships with NASA Langley, Dominion Energy, and Richmond tech startups provide our members with internship opportunities, capstone projects, and direct paths to career placement." icon="../../src/assets/upArrowIcon.png"/>
+        <MediumRectCard title="TROJAN RESILIENCE" description="The legendary VSU Trojan spirit—marked by determination, unity, and excellence—drives our members to overcome challenges and achieve extraordinary success in competitions and career outcomes." icon="../../src/assets/shieldIcon.png"/> 
 
       </div>
 
