@@ -1,6 +1,5 @@
 import React from "react";
-import MediumCard from "../components/MediumCard";
-import MediumRectCard from "../components/MediumRectCard";
+import MediumRectCard from "../../components/MediumRectCard";
 
 const AdvantagePage = () => {
   return (

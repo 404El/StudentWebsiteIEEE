@@ -1,5 +1,5 @@
 import React from "react";
-import ImageCard from "../components/ImageCard";
+import ImageCard from "../../components/ImageCard";
 
 const UpcomingBattles = () => {
   return (

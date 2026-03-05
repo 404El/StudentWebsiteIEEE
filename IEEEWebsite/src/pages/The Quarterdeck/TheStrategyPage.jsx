@@ -1,5 +1,5 @@
 import React from "react";
-import MediumCard from "../components/MediumCard";
+import MediumCard from "../../components/MediumCard";
 
 const TheStrategyPage = () => {
   return (

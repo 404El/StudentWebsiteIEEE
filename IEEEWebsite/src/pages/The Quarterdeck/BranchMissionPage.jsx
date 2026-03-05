@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const BranchMissionPage = () => {
   return (
     <div className="h-auto flex flex-col items-center justify-start px-[15%] py-20 ">

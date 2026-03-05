@@ -1,26 +1,15 @@
-import NavBar from "./components/Navbar"
-import AdvantagePage from "./pages/AdvantagePage"
-import BranchMissionPage from "./pages/BranchMissionPage"
-import HomePage from "./pages/HomePage"
-import StatsPage from "./pages/StatsPage"
-import TheStrategyPage from "./pages/TheStrategyPage"
-import UpcomingBattles from "./pages/UpcomingBattles"
+import React from "react";
+import Quarterdeck from "./pages/Quarterdeck";
+
 
 function App() {
   return (
     <>
       <div>
-        <HomePage />
-        <BranchMissionPage />
-        <StatsPage/>
-        <TheStrategyPage/>
-        <AdvantagePage/>
-        <UpcomingBattles/>
-
+        <Quarterdeck />
       </div>
-      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
