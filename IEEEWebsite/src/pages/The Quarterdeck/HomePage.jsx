@@ -4,14 +4,14 @@ import NavBar from "../../components/NavBar";
 
 const HomePage = () => {
   return (
-    <div className="h-[80vh]flex flex-col">
+    <div className="h-auto flex flex-col">
       <div className="relative z-50">
         <NavBar />
       </div>
 
       <div className="relative">
         <img
-          className="h-[70vh] w-full object-cover relative"
+          className="h-[90vh] sm:h-[70vh] w-full object-cover relative"
           src="../../src/assets/homepage.png"
           alt=""
         />

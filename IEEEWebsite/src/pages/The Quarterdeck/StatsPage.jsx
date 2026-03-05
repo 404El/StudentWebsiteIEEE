@@ -26,7 +26,7 @@ const visible = [cards[current % cards.length], cards[(current + 1) % cards.leng
           </h1>
 
           {/* PC View */}
-          <div className="md:flex md:flex-row px-3 gap-3 hidden md:items-center md:justify-center md:px-5 w-full">
+          <div className="md:flex md:flex-row gap-3 hidden md:items-center md:justify-center md:px-5 w-full">
             {cards.map((cards, i) => (
               <SmallCard
                 key={i}
@@ -37,11 +37,11 @@ const visible = [cards[current % cards.length], cards[(current + 1) % cards.leng
           </div>
 
           {/* mobile View */}
-          <div className="flex md:hidden items-center justify-center gap-10">
+          <div className="flex md:hidden items-center justify-center gap-5">
             <button onClick={prev} className="text-2xl text-white font-bold">
               {"<"}
             </button>
-            <div className="flex flex-col w-[70%] sm:flex-row gap-3 items-center">
+            <div className="flex flex-col sm:flex-row gap-3 items-center">
               {visible.map((card, i) => (
                 <SmallCard key={i} title={card.title} description={card.description}/>
               ))}

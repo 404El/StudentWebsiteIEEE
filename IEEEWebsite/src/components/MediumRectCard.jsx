@@ -2,11 +2,11 @@ import React from "react";
 
 const MediumRectCard = ({ title, description, icon}) => {
   return (
-    <div className="w-130 h-65 bg-Smoke-Orange border-2 rounded-2xl border-white flex flex-row shadow-xl">
+    <div className="md:w-full w-70 h-auto  md:h-65 bg-Smoke-Orange border-2 rounded-2xl border-white flex flex-row shadow-xl">
       <div className="w-full h-full flex flex-row gap-3 p-5">
-        <div className="w-15 h-15 bg-IEEE-Blue rounded-2xl flex items-center justify-center">
+        <div className="md:w-15 md:h-15 w-20 h-10 bg-IEEE-Blue rounded-2xl flex items-center justify-center">
           <img
-            className="w-7 h-7"
+            className="md:w-7 md:h-7 w-5 h-5" 
             src={icon}
             alt=""
           />

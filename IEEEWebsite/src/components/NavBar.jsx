@@ -4,19 +4,19 @@ const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <div className="flex flex-col h-auto w-full shadow-xl">
-      <div className="w-full h-auto bg-white flex items-center px-4">
+      <div className="w-full h-auto bg-white flex items-center px-4 py-2">
 
         <div className="w-full flex flex-row items-center justify-between gap-4 py-2 relative">
 
-          <div className="flex flex-row items-center justify-center gap-2 pl-4">
-            <h1 className="text-2xl font-bold p-4 bg-IEEE-Blue text-white border rounded-xl">
+          <div className="flex flex-row items-center justify-center gap-2 ">
+            <h1 className="lg:text-2xl md:text-lg text-base font-bold lg:p-4 p-3 bg-IEEE-Blue text-white border rounded-xl">
               IEEE
             </h1>
 
             <div className="flex flex-col">
-              <h2 className="text-xl font-bold text-IEEE-Blue">THE TROJAN</h2>
-              <h2 className="text-xl font-bold text-IEEE-Orange">STANDARD</h2>
-              <p className="text-md font-light text-Soft-Grey">
+              <h2 className="lg:text-xl md:text-lg text-base font-bold text-IEEE-Blue">THE TROJAN</h2>
+              <h2 className="lg:text-xl md:text-lg text-base font-bold text-IEEE-Orange">STANDARD</h2>
+              <p className="md:text-md hidden font-light text-Soft-Grey">
                 Greater Happens Here
               </p>
             </div>
@@ -26,7 +26,7 @@ const NavBar = () => {
           <div className="flex flex-row items-center gap-4">
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4 md:hidden">
               <img
-                className="w-5 h-5"
+                className="md:w-5 md:h-5 w-4 h-4"
                 src="../../src/assets/languageIcon.png"
                 alt=""
               />
@@ -77,9 +77,9 @@ const NavBar = () => {
           )}
 
           {/* Computer View */}
-          <ul className="flex-row items-center lg:gap-2 hidden md:flex md:gap-1">
+          <ul className="flex-row items-center lg:gap-2 hidden text-sm xl:text-base md:flex md:gap-1 text-center">
             <a
-              className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2"
+              className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2 "
               href="/"
             >
               <li>THE QUARTERDECK</li>
@@ -111,7 +111,7 @@ const NavBar = () => {
 
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4">
               <img
-                className="w-5 h-5"
+                className="lg:w-5 lg:h-5 w-3 h-3"
                 src="../../src/assets/languageIcon.png"
                 alt=""
               />

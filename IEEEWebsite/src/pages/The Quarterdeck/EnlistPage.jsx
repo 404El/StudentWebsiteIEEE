@@ -3,9 +3,9 @@ import React from "react";
 
 const EnlistPage = () => {
   return (
-    <div>
+    <div className="flex flex-col w-full h-auto ">
       <div className="h-2 w-full bg-IEEE-Orange"></div>
-      <div className="bg-IEEE-Blue h-auto flex flex-col items-center justify-center py-15 gap-5">
+      <div className="bg-IEEE-Blue h-auto flex flex-col items-center justify-center py-15 px-7 gap-5">
         <h1 className="text-white text-6xl font-extrabold uppercase text-center">
           Ready to Join the <span className="text-IEEE-Orange">Legion</span>?
         </h1>

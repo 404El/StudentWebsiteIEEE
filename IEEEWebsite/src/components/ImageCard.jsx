@@ -2,7 +2,7 @@ import React from "react";
 
 const ImageCard = ({ date, title, description, img }) => {
   return (
-    <div className="w-100 h-110 border-t-5 border-IEEE-Orange rounded-2xl flex flex-col shadow-xl overflow-hidden">
+    <div className="md:w-100 w-auto h-auto border-t-5 border-IEEE-Orange rounded-2xl flex flex-col shadow-xl overflow-hidden">
       <img
         src={img}
         alt=""
