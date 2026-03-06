@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
+import homepage from "../../assets/homepage.png"
 
 
 const HomePage = () => {
@@ -12,7 +13,7 @@ const HomePage = () => {
       <div className="relative">
         <img
           className="h-[70vh] w-full object-cover relative"
-          src="../../src/assets/homepage.png"
+          src={homepage}
           alt=""
         />
 

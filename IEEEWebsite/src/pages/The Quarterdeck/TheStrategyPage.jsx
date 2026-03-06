@@ -1,24 +1,27 @@
 import React, { useState } from "react";
 import MediumCard from "../../components/MediumCard";
+import shieldIcon from "../../assets/shieldIcon.png"
+import boltIcon from "../../assets/boltIcon.png"
+import medalIcon from "../../assets/medalIcon.png"
 
 const cards = [
   {
     title: "Elite Networking",
-    icon: "../../src/assets/shieldIcon.png",
+    icon: shieldIcon,
     b1: "Connect with Fortune 500 industry leaders",
     b2: "Access VSU alumni network in top tech companies",
     b3: "Mentorship from IEEE professionals worldwide",
   },
   {
     title: "Technical Mastery",
-    icon: "../../src/assets/boltIcon.png",
+    icon: boltIcon,
     b1: "Hands-on workshops in AI, robotics, and IoT",
     b2: "Access to cutting-edge lab equipment and software",
     b3: "Industry certifications and training programs",
   },
   {
     title: "Victory & Recognition",
-    icon: "../../src/assets/medalIcon.png",
+    icon: medalIcon,
     b1: "Compete in national hackathons and design challenges",
     b2: "Resume-building leadership positions",
     b3: "IEEE scholarship and award opportunities",

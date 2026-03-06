@@ -10,7 +10,7 @@ const BranchMissionPage = () => {
           <p className="bg-IEEE-Blue text-white px-4 py-2 rounded-full font-bold my-4">
             THE TROJAN STANDARD
           </p>
-          <h1 className="text-4xl font-extrabold mb-4 uppercase">BRANCH MISSION</h1>
+          <h1 className="text-4xl font-extrabold mb-4 text-center uppercase">BRANCH MISSION</h1>
         </div>
 
         <div className="text-start">

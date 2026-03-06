@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import LargeCard from "../../components/LargeCard";
+import targetIcon from "../../assets/targetIcon.png"
+import eyeIcon from "../../assets/eyeIcon.png"
 
 const cards = [
-    {title: "Our Battle Plan", subheader: "MISSION:", description: "To advance technology for the benefit of humanity by:", b1: "Empowering VSU's engineering students with cutting-edge technical skills and professional development", b2: "Fostering innovation through hands-on projects and industry collaboration", b3: "Building a diverse, inclusive community of future technology leaders", b4: "Upholding the Trojan standard of excellence in all endeavors", img: "../../src/assets/targetIcon.png"},
-    {title: "Our Vision", subheader: "VISION:", description: "To be recognized as:", b1: "The premier IEEE student branch among HBCUs nationwide", b2: "A model organization for diversity and inclusion in STEM", b3: "The launchpad for exceptional engineering careers", b4: "Champions of technological innovation serving our community", img: "../../src/assets/eyeIcon.png"}
+    {title: "Our Battle Plan", subheader: "MISSION:", description: "To advance technology for the benefit of humanity by:", b1: "Empowering VSU's engineering students with cutting-edge technical skills and professional development", b2: "Fostering innovation through hands-on projects and industry collaboration", b3: "Building a diverse, inclusive community of future technology leaders", b4: "Upholding the Trojan standard of excellence in all endeavors", img: targetIcon},
+    {title: "Our Vision", subheader: "VISION:", description: "To be recognized as:", b1: "The premier IEEE student branch among HBCUs nationwide", b2: "A model organization for diversity and inclusion in STEM", b3: "The launchpad for exceptional engineering careers", b4: "Champions of technological innovation serving our community", img: eyeIcon}
 ]
 
 const BattlePlanVision = () => {

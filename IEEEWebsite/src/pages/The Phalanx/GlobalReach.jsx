@@ -1,3 +1,5 @@
+import globalReachImg from "../../assets/globalReachImg.png"
+
 export default function GlobalReach() {
   return (
     <section
@@ -12,7 +14,7 @@ export default function GlobalReach() {
             style={{ border: "3px solid #e85d20" }}
           >
             <img
-              src="../../src/assets/globalReachImg.png"
+              src={globalReachImg}
               alt="Close-up of a circuit board with red components"
               className="w-full object-cover"
               style={{ height: "440px" }}

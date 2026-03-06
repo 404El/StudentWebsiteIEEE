@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from '../../components/NavBar'
+import blueBg from "../../assets/blueBg.png"
 
 const PhalanxHomePage = () => {
   return (
@@ -11,7 +12,7 @@ const PhalanxHomePage = () => {
       <div className="relative">
         <img
           className="h-[70vh] sm:h-[70vh] w-full object-cover relative"
-          src="../../src/assets/blueBg.png"
+          src={blueBg}
           alt=""
         />
 

@@ -1,4 +1,5 @@
 import React from "react";
+import rightArrow from "../../assets/rightArrow.png"
 
 
 const EnlistPage = () => {
@@ -18,7 +19,7 @@ const EnlistPage = () => {
           className="text-white bg-IEEE-Orange flex flex-row justify-center items-center uppercase font-bold px-5 py-3 rounded-2xl mt-5 gap-2"
         >
           Enlist Today
-          <img className="w-10" src="../../src/assets/rightArrow.png" alt="" />
+          <img className="w-10" src={rightArrow} alt="" />
         </a>
       </div>
     </div>

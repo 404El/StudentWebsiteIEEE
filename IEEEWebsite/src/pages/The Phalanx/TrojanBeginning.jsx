@@ -1,4 +1,6 @@
 import React from "react";
+import clockIcon from "../../assets/clockIcon.png"
+import fullImg1 from "../../assets/fullImg1.png"
 
 const TrojanBeginning = () => {
   return (
@@ -7,7 +9,7 @@ const TrojanBeginning = () => {
         <div className="w-15 h-15 bg-IEEE-Orange border-IEEE-Orange rounded-2xl flex items-center justify-center">
           <img
             className="w-8 h-8"
-            src="../../src/assets/clockIcon.png"
+            src={clockIcon}
             alt=""
           />
         </div>
@@ -46,7 +48,7 @@ const TrojanBeginning = () => {
       <div className="lg:w-[50%] w-[80%]">
         <img
           className="w-full h-auto border-2 rounded-3xl border-IEEE-Orange shadow-2xl"
-          src="../../src/assets/fullImg1.png"
+          src={fullImg1}
           alt=""
         />
       </div>

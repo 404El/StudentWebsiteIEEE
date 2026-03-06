@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import languageIcon from "../assets/languageIcon.png"
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,7 +29,7 @@ const NavBar = () => {
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4 md:hidden">
               <img
                 className="md:w-5 md:h-5 w-4 h-4"
-                src="../../src/assets/languageIcon.png"
+                src={languageIcon}
                 alt=""
               />
               EN
@@ -106,7 +107,7 @@ const NavBar = () => {
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4">
               <img
                 className="lg:w-5 lg:h-5 w-3 h-3"
-                src="../../src/assets/languageIcon.png"
+                src={languageIcon}
                 alt=""
               />
               EN
