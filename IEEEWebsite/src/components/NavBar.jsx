@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // IMPORTED Link
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -47,8 +47,13 @@ const NavBar = () => {
                   <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>THE QUARTERDECK</Link>
                 </li>
                 <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2">
-                  {/* LINKED TO SEPARATE PAGE */}
+                  <Link to="/phalanx" onClick={() => setIsMobileMenuOpen(false)}>THE PHALANX</Link>
+                </li>
+                <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2">
                   <Link to="/activities" onClick={() => setIsMobileMenuOpen(false)}>THE CAMPAIGN TRAIL</Link>
+                </li>
+                <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2">
+                  <Link to="/enlistment" onClick={() => setIsMobileMenuOpen(false)}>ENLISTMENT</Link>
                 </li>
               </ul>
             </div>
@@ -63,10 +68,15 @@ const NavBar = () => {
               <li>THE QUARTERDECK</li>
             </Link>
 
-            <li className="font-semibold text-IEEE-Blue p-2">THE PHALANX</li>
+            <Link
+              className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-2 rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              to="/BranchMissionPage"
+            >
+              <li>THE PHALANX</li>
+            </Link>
+
             <li className="font-semibold text-IEEE-Blue p-2">TROJAN LEADERS</li>
 
-            {/* CHANGE: Now using Link 'to="/activities"' instead of href="#CurrentActivities" */}
             <Link
               className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-2 rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               to="/activities"
@@ -74,7 +84,12 @@ const NavBar = () => {
               <li>THE CAMPAIGN TRAIL</li>
             </Link>
 
-            <li className="font-semibold text-IEEE-Blue p-2">ENLISTMENT</li>
+            <Link
+              className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-2 rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              to="/enlistment"
+            >
+              <li>ENLISTMENT</li>
+            </Link>
 
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4 ml-2">
               <img className="w-5 h-5" src="/src/assets/languageIcon.png" alt="" />
