@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="flex flex-col h-auto w-full shadow-xl">
       <div className="w-full h-auto bg-white flex items-center px-4 py-2">
@@ -13,7 +14,6 @@ const NavBar = () => {
             <h1 className="lg:text-2xl md:text-lg text-base font-bold lg:p-4 p-3 bg-IEEE-Blue text-white border rounded-xl">
               IEEE
             </h1>
-
             <div className="flex flex-col">
               <h2 className="lg:text-xl md:text-lg text-base font-bold text-IEEE-Blue">THE TROJAN</h2>
               <h2 className="lg:text-xl md:text-lg text-base font-bold text-IEEE-Orange">STANDARD</h2>
@@ -23,7 +23,7 @@ const NavBar = () => {
             </div>
           </div>
 
-          {/* Mobile View */}
+          {/* Mobile View Toggle */}
           <div className="flex flex-row items-center gap-4">
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4 md:hidden">
               <img
@@ -33,18 +33,17 @@ const NavBar = () => {
               />
               EN
             </button>
-
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="flex flex-col items-center justify-center space-y-1.5 hover:cursor-pointer md:hidden pr-4"
-          >
-            <span className="block w-7 h-0.75 bg-black"></span>
-            <span className="block w-7 h-0.75 bg-black"></span>
-            <span className="block w-7 h-0.75 bg-black"></span>
-          </button>
-
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="flex flex-col items-center justify-center space-y-1.5 hover:cursor-pointer md:hidden pr-4"
+            >
+              <span className="block w-7 h-0.75 bg-black"></span>
+              <span className="block w-7 h-0.75 bg-black"></span>
+              <span className="block w-7 h-0.75 bg-black"></span>
+            </button>
           </div>
 
+          {/* Mobile Dropdown Menu */}
           {isMobileMenuOpen && (
             <div className="absolute top-full right-0 mt-1 w-48 bg-white border border-gray-300 rounded shadow-lg md:hidden">
               <div className="flex flex-col items-center">
@@ -102,12 +101,6 @@ const NavBar = () => {
               href="/"
             >
               <li>THE CAMPAIGN TRAIL</li>
-            </a>
-            <a
-              className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2"
-              href="/"
-            >
-              <li>ENLISTMENT</li>
             </a>
 
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4">

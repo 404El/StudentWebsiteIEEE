@@ -4,7 +4,7 @@ import NavBar from "../../components/NavBar";
 
 const HomePage = () => {
   return (
-    <div className="h-auto flex flex-col">
+    <div className="h-[80vh]flex flex-col">
       <div className="relative z-50">
         <NavBar />
       </div>
@@ -18,7 +18,7 @@ const HomePage = () => {
 
         <div className="absolute inset-0 flex flex-row items-center">
           <div className="flex flex-col items-start justify-start mx-6 md:mx-8">
-            <h1 className="text-md font-bold text-center mt-8 text-white px-4 py-2 bg-IEEE-Orange  rounded-full shadow-xl">
+            <h1 className="text-md font-bold text-center mt-8 text-white px-4 py-2 bg-IEEE-Orange rounded-full shadow-xl">
               THE QUARTERDECK
             </h1>
 
@@ -44,9 +44,12 @@ const HomePage = () => {
                 />
               </button>
 
-              <button className="mt-6 md:px-6 px-3 py-4 bg-none border-2 text-white font-semibold rounded-xl shadow-lg lg:text-lg md:text-md text-sm transition-all duration-300 hover:-translate-y-1">
-                VIEW CAMPAIGN TRAIL
-              </button>
+              {/* CHANGE: Wrapped this button in an <a> tag pointing to #CurrentActivities */}
+              <a href="#CurrentActivities">
+                <button className="mt-6 md:px-6 px-3 py-4 bg-none border-2 text-white font-semibold rounded-xl shadow-lg lg:text-lg md:text-md text-sm transition-all duration-300 hover:-translate-y-1">
+                  VIEW CAMPAIGN TRAIL
+                </button>
+              </a>
             </div>
           </div>
 
