@@ -1,17 +1,16 @@
-import React from "react";
-import Quarterdeck from "./pages/Quarterdeck";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import QuarterDeck from "./pages/Quarterdeck"
 import Phalanx from "./pages/Phalanx";
 
-
-function App() {
+export default function App() {
   return (
-    <>
-      <div>
-        <Quarterdeck />
-        <Phalanx/>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<QuarterDeck />} />
+        <Route path="/quarterdeck" element={<QuarterDeck />} />
+        <Route path="/phalanx" element={<Phalanx />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

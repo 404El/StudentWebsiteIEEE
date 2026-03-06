@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,11 +52,11 @@ const NavBar = () => {
                 <ul className="w-full flex flex-col items-center hover:cursor-pointer ">
 
                   <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2 ">
-                    <a>THE QUARTERDECK</a>
+                    <Link to="/quarterdeck">THE QUARTERDECK</Link>
                   </li>
 
                   <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2 ">
-                    <a>THE PHALANX</a>
+                    <Link to="/phalanx">THE PHALANX</Link>
                   </li>
 
                   <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2 ">
@@ -82,13 +83,13 @@ const NavBar = () => {
               className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2 "
               href="/"
             >
-              <li>THE QUARTERDECK</li>
+              <Link to="/quarterdeck">THE QUARTERDECK</Link>
             </a>
             <a
               className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2"
               href="/"
             >
-              <li>THE PHALANX</li>
+              <Link to="/phalanx">THE PHALANX</Link>
             </a>
             <a
               className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2"
