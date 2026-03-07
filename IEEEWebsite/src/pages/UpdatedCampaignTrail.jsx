@@ -19,6 +19,8 @@ const UsersIcon = () => (
 );
 
 /* ─── Data ─────────────────────────────────────── */
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSelF5_y8C554rDK009LC6BbXiDMeS_cFWxK0Unb9dFfU3QZZQ/viewform?usp=publish-editor";
+
 const campaigns = [
   {
     tag: "Workshop",
@@ -145,9 +147,14 @@ export default function CampaignTrail() {
                   </span>
                 </div>
                 <p className="text-sm text-gray-500 leading-relaxed flex-1 mb-4">{c.desc}</p>
-                <button className="self-start px-6 py-2.5 bg-IEEE-Orange text-white text-xs font-bold uppercase tracking-widest rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-[#e55f00]">
+                <a
+                  href={FORM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="self-start px-6 py-2.5 bg-IEEE-Orange text-white text-xs font-bold uppercase tracking-widest rounded-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-[#e55f00]"
+                >
                   Register Now
-                </button>
+                </a>
               </div>
             </div>
           ))}
@@ -235,5 +242,6 @@ export default function CampaignTrail() {
       </div>
 
     </div>
+    
   );
 }
