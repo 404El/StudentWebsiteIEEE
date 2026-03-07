@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import ImageCard from "../../components/ImageCard";
-import hackathonImg from "../../assets/hackathonImg.png"
-import pcbImg from "../../assets/pcbImg.png"
-import summitImg from "../../assets/summitImg.png"
+import hackathonPic from "../../assets/hackathonPic.jpeg"
+import pcbClass from "../../assets/pcbClass.jpg"
 import rightOrangeArrow from "../../assets/rightOrangeArrow.png"
+import summitPic from "../../assets/summitPic.jpeg"
 
 const cards = [
   {
@@ -11,21 +11,21 @@ const cards = [
     title: "HACKATHON",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde ad et corporis! Officia, sint eveniet delectus accusantium ullam vel temporibus! Cumque sed nesciunt placeat fuga. Repudiandae, officia! Est, voluptas!",
-    img: hackathonImg,
+    img: hackathonPic,
   },
   {
     date: "March 22, 2026",
     title: "PCB Design Bootcamp",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde ad et corporis! Officia, sint eveniet delectus accusantium ullam vel temporibus! Cumque sed nesciunt placeat fuga. Repudiandae, officia! Est, voluptas!",
-    img: pcbImg,
+    img: pcbClass,
   },
   {
     date: "April 5, 2026",
     title: "Tech Titans Summit",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui unde ad et corporis! Officia, sint eveniet delectus accusantium ullam vel temporibus! Cumque sed nesciunt placeat fuga. Repudiandae, officia! Est, voluptas!",
-    img: summitImg,
+    img: summitPic,
   },
 ];
 

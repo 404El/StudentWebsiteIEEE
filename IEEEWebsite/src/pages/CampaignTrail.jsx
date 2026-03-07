@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 /* ─── Color tokens ─────────────────────────────── */
 const C = {
   navy:    "#002855",

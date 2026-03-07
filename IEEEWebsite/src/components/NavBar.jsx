@@ -60,7 +60,7 @@ const NavBar = () => {
                   </li>
 
                   <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2 ">
-                    <a>TROJAN LEADERS</a>
+                    <Link to="/">TROJAN LEADERS</Link>
                   </li>
 
                   <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2 ">
@@ -68,7 +68,7 @@ const NavBar = () => {
                   </li>
 
                   <li className="hover:bg-gray-100 text-center w-full font-semibold text-IEEE-Blue p-2 ">
-                    <a>ENLISTMENT</a>
+                    <Link to="/enlistment">ENLISTMENT</Link>
                   </li>
 
                 </ul>
@@ -97,12 +97,18 @@ const NavBar = () => {
             >
               <li>TROJAN LEADERS</li>
             </a>
-            <a
+            <Link
               className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2"
-              href="/"
+              to="/leaders"
             >
               <li>THE CAMPAIGN TRAIL</li>
-            </a>
+            </Link>
+            <Link
+              className="hover:bg-IEEE-Blue font-semibold text-IEEE-Blue hover:text-white p-1 border:hidden hover:border-gray-400 hover:rounded-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-2"
+              to="/enlistment"
+            >
+              <li>ENLISTMENT</li>
+            </Link>
 
             <button className="flex flex-row items-center gap-2 border-2 border-gray-400 rounded-md p-2 px-4">
               <img

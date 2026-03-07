@@ -1,4 +1,4 @@
-import globalReachImg from "../../assets/globalReachImg.png"
+import groupPic from "../../assets/groupPic.jpg"
 
 export default function GlobalReach() {
   return (
@@ -14,7 +14,7 @@ export default function GlobalReach() {
             style={{ border: "3px solid #e85d20" }}
           >
             <img
-              src={globalReachImg}
+              src={groupPic}
               alt="Close-up of a circuit board with red components"
               className="w-full object-cover"
               style={{ height: "440px" }}

@@ -1,6 +1,6 @@
 import React from "react";
 import clockIcon from "../../assets/clockIcon.png"
-import fullImg1 from "../../assets/fullImg1.png"
+import fullImg1 from "../../assets/fullImg1.jpg"
 
 const TrojanBeginning = () => {
   return (
