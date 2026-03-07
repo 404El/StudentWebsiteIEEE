@@ -4,43 +4,43 @@ import { Link } from "react-router-dom";
 /* ─── Data ─────────────────────────────────────── */
 const officers = [
   {
-    initials: "MJ",
-    name: "Melody E",
+    initials: "ME",
+    name: "Melody",
     role: "President / Branch Chair",
     major: "Computer Engineering",
     year: "Senior",
     bio: "Leading the Trojan chapter with vision for technical and professional systems.",
-    email: "me@vsu.edu",
-    phone: "(804)",
+    email: "menw9176@vsu.edu",
+    phone: "(804)-524-5275",
   },
   {
-    initials: "AW",
+    initials: "KW",
     name: "Kwabena",
     role: "Vice President / Vice Chair",
-    major: "Computer Science",
+    major: "Computer engineering",
     year: "Any Year",
     bio: "",
     email: "kw@vsu.edu",
-    phone: "",
+    phone: "(804)-524-5275",
   },
   {
-    initials: "DC",
-    name: "Eleni Nekonnen",
+    initials: "EM",
+    name: "Eleni",
     role: "Secretary",
     major: "Computer Science",
     year: "Junior",
     bio: "Maintains official records, ensuring our operations stay sharp and documented.",
-    email: "ene@vsu.edu",
+    email: "emek7557@vsu.edu",
     phone: "",
   },
   {
     initials: "JP",
-    name: "IDK",
+    name: "Jane",
     role: "Treasurer",
     major: "Electrical Engineering",
     year: "Junior",
     bio: "Keeps financial control to support technical resources. Treasurer with precision.",
-    email: "jp@vsu.edu",
+    email: "jpui@vsu.edu",
     phone: "",
   },
 ];
@@ -49,25 +49,25 @@ const committees = [
   {
     name: "Technical Committee",
     desc: "Organizes technical workshops, hackathons, and hands-on training sessions.",
-    chair: "__@vsu.edu",
+    chair: "sdot3968@vsu.edu",
     members: ["Sarah Martinez", "Noah Brown", "Holly Davis", "Jordan Lee"],
   },
   {
     name: "Events & Activities Committee",
     desc: "Plans and coordinates all chapter events, socials, and networking opportunities.",
-    chair: "__@vsu.edu",
+    chair: "mpja7092@vsu.edu",
     members: ["Rachel Green", "James Wilson", "Lisa Anderson", "Tyler Scott"],
   },
   {
     name: "Outreach & Community Service",
     desc: "Manages K-12 STEM programs and community technology initiatives.",
-    chair: "__@vsu.edu",
+    chair: "jhko2356@vsu.edu",
     members: ["Chris Taylor", "Amanda White", "Brian Harris", "Olivia Rivera"],
   },
   {
     name: "Communications & Media",
     desc: "Handles social media, newsletters, website updates, and public relations.",
-    chair: "__@vsu.edu",
+    chair: "emlo4789@vsu.edu",
     members: ["Ashley Moore", "Tyler Jackson", "Viola Davis", "Ryan Davis"],
   },
 ];
@@ -292,8 +292,8 @@ const TrojanLeaders = () => {
             Web Administrator & Digital Communications
           </p>
           <div className="flex flex-col gap-1.5 items-center mb-4 text-sm text-gray-500">
-            <span>Lead: Alex Nickerson</span>
-            <span>Aaron Wilcots</span>
+            <span>Team Lead: Eleni Mekonnen, </span>
+            <span>Briana Davis, Aura Wilson</span>
           </div>
           <span className="flex items-center justify-center gap-2 text-sm text-IEEE-Blue font-semibold mb-4">
             <span className="text-IEEE-Orange"><MailIcon /></span>
